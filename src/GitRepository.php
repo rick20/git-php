@@ -8,8 +8,12 @@
 
 	namespace Cz\Git;
 
+	use Illuminate\Support\Traits\Macroable;
+
 	class GitRepository implements IGit
 	{
+		use Macroable;
+
 		/** @var  string */
 		protected $repository;
 
